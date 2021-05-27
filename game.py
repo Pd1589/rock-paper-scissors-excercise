@@ -13,4 +13,23 @@ else:
 valid_options = ["Rock","Paper","Scissors"]   
 computer_choice= random.choice(valid_options)
 print("Computer Choice:",computer_choice)
+
+
+if (user_choice == computer_choice):
+    print("Tie Game:")
+elif(computer_choice=="Rock"):
+    if(user_choice=="Scissors"):
+        print("Rock beats scissors. Computer Wins!")
+    else:
+        print("Paper beats Rock. Congrats, you win!")
+elif(computer_choice=="Scissors"):
+    if(user_choice=="Rock"):
+        print("Rock beats scissors. You Win!")
+    else:
+        print("Paper Loses to Scissors. Computer Wins!") 
+elif(computer_choice=="Paper"):
+    if(user_choice=="Rock"):
+        print("Paper Covers Rock. Computer Wins!")
+    else:
+        print("Paper Loses to Scissors. You Win!")  
 print("END OF GAME, THANKS FOR PLAYING")
